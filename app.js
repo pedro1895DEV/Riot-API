@@ -3,7 +3,7 @@ const https = require('https');
 
 const apiUrlAbsolut = 'https://br1.api.riotgames.com/lol/league/v4/entries/by-summoner/RQcxTL0owni36WDXE3LHl7XCgi-l4fWDE5QuT0CXAQxm9A';
 const apiUrlTakeshi = 'https://br1.api.riotgames.com/lol/league/v4/entries/by-summoner/-loWOZ49td71-5QuxKb0mCgv-f7SyRZPulX6Y9YLNfqP';
-const apiKey = 'RGAPI-7390c776-d778-46f0-8409-c9e3fb0fa3ee';
+const apiKey = process.env.apiKey;
 
 function makeRequest(url) {
     return new Promise((resolve, reject) => {
